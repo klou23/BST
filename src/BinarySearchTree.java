@@ -53,7 +53,7 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
 
     public boolean contains(Key key) {
-        return get(root, key) == null;
+        return get(root, key) != null;
     }
 
     public Value remove(Key key) {
