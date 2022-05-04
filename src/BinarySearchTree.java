@@ -1,3 +1,10 @@
+/**
+ * BinarySearchTree.java
+ * Kevin Lou
+ * 05/03/2022
+ * Implementation of BST.
+ * Template provided by Ms. Hellman.
+ */
 public class BinarySearchTree<Key extends Comparable<Key>, Value> {
 
     public Node<Key, Value> root;
@@ -53,7 +60,7 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
     }
 
     public boolean contains(Key key) {
-        return get(root, key) == null;
+        return get(root, key) != null;
     }
 
     public Value remove(Key key) {
